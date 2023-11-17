@@ -8,8 +8,6 @@
 
 body,
 html {
-  overflow: hidden;
-  position: fixed;
   margin: 0;
   padding: 0;
   font-family:  'Plus Jakarta Sans', sans-serif;
@@ -72,6 +70,7 @@ main {
 @media (max-width: 767.98px) {
   main {
     height: 100vh;
+    position: fixed;
     overflow: hidden;
 
     .container {
