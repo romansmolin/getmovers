@@ -1,0 +1,98 @@
+@import "../variables/variables.scss";
+
+.main-form {
+    &__input.step-5 {
+        width: 480px;
+
+        .urgency {
+            display: flex;
+            width: 100%;
+            height: 140px;
+
+            &__block {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+                border: 0.1px solid #afc1c9;
+                cursor: pointer;
+
+                
+                &:hover {
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    
+                    svg {
+                        path {
+                            fill: $primary-color;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+
+                svg {
+                    display: flex;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-form {
+        &__input.step-5 {
+            width: 350px;
+
+            .urgency {
+                flex-direction: column;
+                height: auto;
+
+                &__block {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 15px;
+                    position: relative;
+
+                    &:first-child {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-left-radius: unset;
+                      }
+              
+                      &:last-child {
+                        border-top-right-radius: unset;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+
+                    svg {
+                        height: 40px;
+                    }
+
+                    p {
+                        position: absolute;
+                        right: 50%;
+                        transform: translateX(50%);
+                    }
+                }
+            }
+        }
+    }
+}

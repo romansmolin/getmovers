@@ -1,0 +1,12 @@
+.main-form {
+    &__input.step-9 {
+        .basic-form {
+            input {
+                width: 100%;
+            }
+            button {
+                margin-top: 16px;
+            }
+        }
+    }
+}

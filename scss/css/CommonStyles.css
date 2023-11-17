@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Light.otf") format("opentype");
+  font-weight: 300;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+img[alt=Logo] {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+main .container {
+  flex: 1;
+  padding: 12px 22px 12px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .container .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #ffffff;
+}
+main .container .header__logo {
+  width: 225px;
+  overflow: hidden;
+}
+main .container .header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .container .header__steps {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 14px;
+}
+main .image-container {
+  flex: 1;
+  background-image: url("../assets/images/family_photo.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+  main {
+    height: 100vh;
+    overflow: hidden;
+  }
+  main .container {
+    padding: 30px 11px;
+  }
+  main .container .header__logo {
+    width: 200px;
+    height: 20px;
+  }
+  main .container .header__logo img {
+    width: 100%;
+    height: 100%;
+  }
+  main .container .main-form__title {
+    margin-bottom: 20px;
+  }
+  main .container .main-form__title h1 {
+    font-size: 24px;
+  }
+  main .container .main-form__title p {
+    font-size: 14px;
+  }
+  main .image-container {
+    display: none;
+  }
+}
+.back-btn {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  color: #263238;
+  font-weight: bold;
+  gap: 6px;
+  cursor: pointer;
+}
+.back-btn svg {
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.back-btn p {
+  font-size: 14px;
+}
+.back-btn:hover {
+  color: #dc3545;
+}
+.back-btn:hover svg {
+  opacity: 1;
+}
+.back-btn:hover svg path {
+  fill: #dc3545;
+}
+
+@media (max-width: 767.98px) {
+  .back-btn svg {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=CommonStyles.css.map */

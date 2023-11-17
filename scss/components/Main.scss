@@ -1,0 +1,35 @@
+@import "../variables/variables.scss";
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 470px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 25px;
+
+    h1 {
+      color: $font-color;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    p {
+      color: $font-color;
+      color: #263238;
+      font-weight: 600;
+      opacity: 0.5;
+    }
+  }
+
+}
+
+.stats {
+  color: #263238;
+  font-size: 0.9em;
+  margin-top: 16px;
+  text-align: center;
+}

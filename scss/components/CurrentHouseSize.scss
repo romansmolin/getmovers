@@ -1,0 +1,108 @@
+@import "../variables/variables.scss";
+
+.main-form {
+  &__input.step-3 {
+    width: auto;
+
+    .bedroom-number {
+      display: flex;
+
+      &__block {
+        border: 0.1px solid #afc1c9;
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+        outline: none;
+        flex: 1;
+        position: relative;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+
+        &__info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 12px;
+
+          span {
+            font-size: 32px;
+            font-weight: bold;
+          }
+
+          div {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+        &:hover {
+          // z-index: 2;
+          border: 1px solid $primary-color;
+
+          span {
+            color: $primary-color;
+          }
+
+          div {
+            color: $primary-color;
+          }
+        }
+        // &:not(:first-child) {
+        //   margin-left: -1px;
+        // }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-form {
+    &__input.step-3 {
+      width: 100%;
+
+      .bedroom-number {
+        flex-direction: column;
+
+        &__block {
+          width: 100%;
+          height: 50px;
+
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: unset;
+          }
+  
+          &:last-child {
+            border-top-right-radius: unset;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          &__info {
+            flex-direction: row;
+            height: 50px;
+
+            div, span {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

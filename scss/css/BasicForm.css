@@ -1,0 +1,48 @@
+.main-form__input .basic-form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main-form__input .basic-form input {
+  margin-bottom: 16px;
+  border: 0.1px solid #afc1c9;
+  padding: 16px;
+}
+.main-form__input .basic-form input::-moz-placeholder {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+.main-form__input .basic-form input::placeholder {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+.main-form__input .basic-form button {
+  padding: 0.75em;
+  background-color: #dc3545;
+  border: none;
+  font-size: 16px;
+  padding: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+.main-form__input .basic-form button svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.main-form__input .basic-form button:hover {
+  background-color: #b51827;
+}
+.main-form__input .basic-form button:hover svg {
+  opacity: 1;
+}/*# sourceMappingURL=BasicForm.css.map */

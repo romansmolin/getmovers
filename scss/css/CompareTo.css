@@ -1,0 +1,45 @@
+.main-form {
+  max-width: 345px;
+}
+.main-form__input.step-4 {
+  width: 100%;
+}
+.main-form__input.step-4 .comparing {
+  display: flex;
+  flex-direction: column;
+}
+.main-form__input.step-4 .comparing__block {
+  padding: 25px 20px;
+  border: 0.1px solid #afc1c9;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-form__input.step-4 .comparing__block svg {
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  margin-right: 8px;
+}
+.main-form__input.step-4 .comparing__block:hover {
+  border: 2px solid #dc3545;
+  color: #dc3545;
+}
+.main-form__input.step-4 .comparing__block:hover svg {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.main-form__input.step-4 .comparing__block:hover svg path {
+  fill: #dc3545;
+}
+
+@media (max-width: 767.98px) {
+  .main-form__input.step-4 .comparing__block {
+    justify-content: center;
+  }
+  .main-form__input.step-4 .comparing__block svg {
+    display: none;
+  }
+}/*# sourceMappingURL=CompareTo.css.map */
