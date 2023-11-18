@@ -66,9 +66,9 @@ main .image-container {
     overflow: hidden;
   }
   main .container {
-    padding: 20px 11px;
     justify-content: flex-start;
     gap: 200px;
+    padding-top: 35px;
   }
   main .container .header__logo {
     width: 200px;

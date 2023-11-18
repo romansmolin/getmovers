@@ -74,9 +74,9 @@ main {
     overflow: hidden;
 
     .container {
-      padding: 20px 11px;
       justify-content: flex-start;
       gap: 200px;
+      padding-top: 35px;
 
       .header {
         &__logo {
