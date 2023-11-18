@@ -442,6 +442,7 @@ main .image-container {
     overflow: hidden;
   }
   main .container {
+    overflow: hidden;
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
