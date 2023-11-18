@@ -66,8 +66,10 @@ main .image-container {
   }
   main .container {
     justify-content: flex-start;
-    gap: 150px;
-    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
   }
   main .container .header__logo {
     width: 200px;
