@@ -262,6 +262,7 @@
 }
 .main-form__input.step-5 .urgency__block p {
   font-size: 16px;
+  font-weight: 600;
 }
 
 @media (max-width: 767.98px) {
@@ -366,8 +367,16 @@
   text-align: center;
 }
 .main-form__input.step-10 .basic-form a {
+  font-size: 20px;
+  font-weight: 600;
   display: block;
   width: 100%;
+}
+.main-form__input.step-10 .basic-form p {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 600;
+  color: #263238;
 }
 
 @media (max-width: 767.98px) {
@@ -485,8 +494,8 @@ main .image-container {
   cursor: pointer;
 }
 .back-btn svg {
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+  position: relative;
+  transition: transform 0.3s;
 }
 .back-btn p {
   font-size: 14px;
@@ -495,7 +504,7 @@ main .image-container {
   color: #dc3545;
 }
 .back-btn:hover svg {
-  opacity: 1;
+  transform: translateX(-3px);
 }
 .back-btn:hover svg path {
   fill: #dc3545;

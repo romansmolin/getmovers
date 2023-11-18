@@ -108,8 +108,8 @@ main .image-container {
   cursor: pointer;
 }
 .back-btn svg {
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+  position: relative;
+  transition: transform 0.3s;
 }
 .back-btn p {
   font-size: 14px;
@@ -118,7 +118,7 @@ main .image-container {
   color: #dc3545;
 }
 .back-btn:hover svg {
-  opacity: 1;
+  transform: translateX(-3px);
 }
 .back-btn:hover svg path {
   fill: #dc3545;

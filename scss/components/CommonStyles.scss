@@ -128,8 +128,8 @@ main {
   cursor: pointer;
 
   svg {
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    position: relative;
+    transition: transform 0.3s;
   }
 
   p {
@@ -140,7 +140,7 @@ main {
     color: $primary-color;
 
     svg {
-      opacity: 1;
+      transform: translateX(-3px);
       path {
         fill: $primary-color;
       }

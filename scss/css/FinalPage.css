@@ -5,8 +5,16 @@
   text-align: center;
 }
 .main-form__input.step-10 .basic-form a {
+  font-size: 20px;
+  font-weight: 600;
   display: block;
   width: 100%;
+}
+.main-form__input.step-10 .basic-form p {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 600;
+  color: #263238;
 }
 
 @media (max-width: 767.98px) {

@@ -38,6 +38,7 @@
 }
 .main-form__input.step-5 .urgency__block p {
   font-size: 16px;
+  font-weight: 600;
 }
 
 @media (max-width: 767.98px) {

@@ -6,8 +6,17 @@
       text-align: center;
 
       a {
+        font-size: 20px;
+        font-weight: 600;
         display: block;
         width: 100%;
+      }
+
+      p {
+        opacity: 0.5;
+        font-size: 16px;
+        font-weight: 600;
+        color: #263238;
       }
     }
   }
