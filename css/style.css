@@ -444,7 +444,7 @@ main .image-container {
   }
   main .container {
     justify-content: flex-start;
-    gap: 180px;
+    gap: 150px;
     padding-top: 35px;
   }
   main .container .header__logo {
