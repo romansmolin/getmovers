@@ -1,1 +1,1 @@
-{"version":3,"sources":["../components/FinalPage.scss","FinalPage.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;ADEI;EACE,kBAAA;ACAN;ADEM;EACE,eAAA;EACA,gBAAA;EACA,cAAA;EACA,WAAA;ACAR;ADGM;EACE,YAAA;EACA,eAAA;EACA,gBAAA;EACA,cAAA;ACDR;;ADOA;EAIY;IACI,eAAA;ECPd;AACF","file":"FinalPage.css"}
+{"version":3,"sources":["../components/FinalPage.scss","FinalPage.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;ADEI;EACE,kBAAA;ACAN;ADEM;EACE,eAAA;EACA,gBAAA;EACA,cAAA;ACAR;ADIM;EACE,YAAA;EACA,eAAA;EACA,gBAAA;EACA,cAAA;ACFR;;ADQA;EAIY;IACI,eAAA;ECRd;AACF","file":"FinalPage.css"}
