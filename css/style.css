@@ -458,9 +458,12 @@
 }
 
 .main-form__input.step-7 p {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   margin-top: 20px;
+  font-weight: 600;
+  color: #263238;
+  opacity: 0.5;
 }
 
 .main-form__input.step-9 .basic-form input {
@@ -494,6 +497,9 @@
   }
   .container.final .main-form__input.step-10 .basic-form a {
     font-size: 24px;
+  }
+  .container.final .main-form__input.step-10 .basic-form p {
+    font-size: 14px;
   }
 }
 @font-face {
@@ -591,7 +597,7 @@ main .image-container {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 150px;
     width: auto;
     padding: 10px 0px 5px 0px;
   }
@@ -630,7 +636,7 @@ main .image-container {
   transition: transform 0.3s;
 }
 .back-btn p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .back-btn:hover {
   color: #dc3545;

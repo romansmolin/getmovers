@@ -132,7 +132,7 @@ main .image-container {
   transition: transform 0.3s;
 }
 .back-btn p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .back-btn:hover {
   color: #dc3545;

@@ -1,5 +1,8 @@
 .main-form__input.step-7 p {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   margin-top: 20px;
+  font-weight: 600;
+  color: #263238;
+  opacity: 0.5;
 }/*# sourceMappingURL=Email.css.map */
