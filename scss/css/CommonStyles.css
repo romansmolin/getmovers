@@ -107,9 +107,9 @@ main .image-container {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 150px;
     width: auto;
-    padding: 10px 0px 130px 0px;
+    padding: 10px 0px 0px 0px;
   }
   main .container .header__logo {
     width: 200px;
@@ -159,6 +159,13 @@ main .image-container {
 }
 
 @media (max-width: 767.98px) {
+  .back-btn {
+    position: absolute;
+    /* bottom: 100px; */
+    right: 50%;
+    bottom: 180px;
+    transform: translateX(50%);
+  }
   .back-btn svg {
     opacity: 1;
   }

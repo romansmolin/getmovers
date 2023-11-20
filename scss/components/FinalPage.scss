@@ -23,7 +23,11 @@
 }
 
 @media (max-width: 767.98px) {
-    .main-form {   
+
+    .container.final {
+      gap: 65px;
+
+      .main-form {   
         &__input.step-10 {
           .basic-form {  
             a {
@@ -32,4 +36,5 @@
           }
         }
       }
+    }
 }
