@@ -589,7 +589,7 @@ main .image-container {
     height: 100%;
   }
   main {
-    height: 90vh;
+    height: 90%;
     overflow: hidden;
   }
   main .container {
