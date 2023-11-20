@@ -44,7 +44,7 @@
   font-weight: bold;
 }
 .main-form__input.step-3 .bedroom-number__block:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
 }
 .main-form__input.step-3 .bedroom-number__block:hover span {
   color: #dc3545;

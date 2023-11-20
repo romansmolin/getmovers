@@ -13,17 +13,19 @@
 .main-form__title h1 {
   color: #263238;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 28px;
 }
 .main-form__title p {
   color: #263238;
   color: #263238;
   font-weight: 600;
   opacity: 0.5;
+  font-size: 16px;
 }
 
 .stats {
   color: #263238;
+  font-size: 16px;
   font-weight: 600;
   opacity: 0.5;
   margin-top: 16px;
@@ -61,7 +63,7 @@
 }
 .main-form .moving-from__house:hover,
 .main-form .moving-from__apartment:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
 }
 .main-form .moving-from__house:hover p,
 .main-form .moving-from__apartment:hover p {
@@ -148,7 +150,7 @@
   font-weight: bold;
 }
 .main-form__input.step-3 .bedroom-number__block:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
 }
 .main-form__input.step-3 .bedroom-number__block:hover span {
   color: #dc3545;
@@ -213,7 +215,7 @@
   margin-right: 8px;
 }
 .main-form__input.step-4 .comparing__block:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-4 .comparing__block:hover svg {
@@ -269,7 +271,7 @@
   color: #263238;
 }
 .main-form__input.step-5 .urgency__block:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:hover svg path {
@@ -435,6 +437,14 @@ a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
 }
 
 img[alt=Logo] {

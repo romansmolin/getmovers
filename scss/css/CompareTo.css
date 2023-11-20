@@ -25,7 +25,7 @@
   margin-right: 8px;
 }
 .main-form__input.step-4 .comparing__block:hover {
-  border: 1px solid #dc3545;
+  border: 0.1px solid #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-4 .comparing__block:hover svg {
