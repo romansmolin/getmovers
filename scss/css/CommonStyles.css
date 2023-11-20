@@ -93,7 +93,7 @@ main .image-container {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 100px;
     width: auto;
     padding: 10px 0px 5px 0px;
   }
