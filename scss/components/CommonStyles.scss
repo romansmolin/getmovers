@@ -96,7 +96,7 @@ main {
   }
 
   main {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 
     .container {
@@ -174,7 +174,7 @@ main {
   .back-btn {
     position: absolute;
     right: 50%;
-    bottom: 105px;
+    bottom: 0;
     transform: translateX(50%);
     
     svg {

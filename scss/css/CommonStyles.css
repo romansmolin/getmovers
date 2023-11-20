@@ -85,7 +85,7 @@ main .image-container {
     height: 100%;
   }
   main {
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
   }
   main .container {
@@ -148,7 +148,7 @@ main .image-container {
   .back-btn {
     position: absolute;
     right: 50%;
-    bottom: 105px;
+    bottom: 0;
     transform: translateX(50%);
   }
   .back-btn svg {
