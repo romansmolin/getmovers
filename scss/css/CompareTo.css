@@ -18,6 +18,9 @@
   align-items: center;
   color: #263238;
 }
+.main-form__input.step-4 .comparing__block:not(:last-child) {
+  border-bottom: 0px;
+}
 .main-form__input.step-4 .comparing__block svg {
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
@@ -25,7 +28,7 @@
   margin-right: 8px;
 }
 .main-form__input.step-4 .comparing__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-4 .comparing__block:hover svg {
@@ -34,6 +37,9 @@
 }
 .main-form__input.step-4 .comparing__block:hover svg path {
   fill: #dc3545;
+}
+.main-form__input.step-4 .comparing__block:hover + a {
+  border-top-color: #dc3545;
 }
 
 @media (max-width: 767.98px) {

@@ -32,7 +32,7 @@
     }
 
     &:hover {
-      border: 0.1px solid $primary-color;
+      border-color: $primary-color;
 
       p {
         color: $primary-color;
@@ -46,6 +46,21 @@
         fill: $primary-color;
       }
     }
+
+    &:hover + a {
+      border-left: 0.1px solid $primary-color;
+    }
+  }
+
+  .moving-from__house {
+    border-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .moving-from__apartment {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }
 
@@ -54,23 +69,46 @@
     &__input.step-2 {
       .moving-from {
         flex-direction: column;
-    
+
+        .moving-from__house {
+          border-right: 0.1px solid #afc1c9;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: unset;
+          border-bottom: 0px;
+        }
+
+        .moving-from__apartment {
+          border-top-right-radius: unset;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+
         .moving-from__house,
         .moving-from__apartment {
           padding: 15px;
           flex-direction: row;
           justify-content: flex-start;
           position: relative;
-    
+
           svg {
             margin-top: 0;
             height: 40px;
           }
-    
+
           p {
             position: absolute;
             right: 50%;
             transform: translateX(50%);
+          }
+
+          &:hover {
+            border-color: $primary-color;
+          }
+
+          &:hover + a {
+            border-left: 0.1px solid #afc1c9;
+            border-top-color: $primary-color;
           }
         }
       }

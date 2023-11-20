@@ -20,6 +20,10 @@
         align-items: center;
         color: $font-color;
 
+        &:not(:last-child) {
+          border-bottom: 0px;
+        }
+
         svg {
             opacity: 0;
             transition: opacity 0.3s, transform 0.3s;
@@ -28,8 +32,9 @@
         }
 
         &:hover {
-            border: 0.1px solid $primary-color;
+            border-color: $primary-color;
             color: $primary-color;
+
 
             svg {
                 opacity: 1;
@@ -38,6 +43,10 @@
                     fill: $primary-color;
                 }
             }
+        }
+        
+        &:hover + a {
+          border-top-color: $primary-color;
         }
       }
     }

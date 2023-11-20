@@ -63,7 +63,7 @@
 }
 .main-form .moving-from__house:hover,
 .main-form .moving-from__apartment:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
 }
 .main-form .moving-from__house:hover p,
 .main-form .moving-from__apartment:hover p {
@@ -77,10 +77,35 @@
 .main-form .moving-from__apartment:hover path {
   fill: #dc3545;
 }
+.main-form .moving-from__house:hover + a,
+.main-form .moving-from__apartment:hover + a {
+  border-left: 0.1px solid #dc3545;
+}
+.main-form .moving-from__house {
+  border-right: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.main-form .moving-from__apartment {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 @media (max-width: 767.98px) {
   .main-form__input.step-2 .moving-from {
     flex-direction: column;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house {
+    border-right: 0.1px solid #afc1c9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: unset;
+    border-bottom: 0px;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__apartment {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   .main-form__input.step-2 .moving-from .moving-from__house,
   .main-form__input.step-2 .moving-from .moving-from__apartment {
@@ -99,6 +124,15 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house:hover,
+  .main-form__input.step-2 .moving-from .moving-from__apartment:hover {
+    border-color: #dc3545;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house:hover + a,
+  .main-form__input.step-2 .moving-from .moving-from__apartment:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
   }
   .back-btn {
     margin: 0 auto;
@@ -122,6 +156,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-form__input.step-3 .bedroom-number__block:not(:last-child) {
+  border-right: 0px;
 }
 .main-form__input.step-3 .bedroom-number__block div {
   color: #263238;
@@ -150,7 +187,7 @@
   font-weight: bold;
 }
 .main-form__input.step-3 .bedroom-number__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
 }
 .main-form__input.step-3 .bedroom-number__block:hover span {
   color: #dc3545;
@@ -158,33 +195,47 @@
 .main-form__input.step-3 .bedroom-number__block:hover div {
   color: #dc3545;
 }
+.main-form__input.step-3 .bedroom-number__block:hover + a {
+  border-left-color: #dc3545;
+}
 
 @media (max-width: 767.98px) {
-  .main-form__input.step-3 {
+  .container .main-form__input.step-3 {
     width: 100%;
   }
-  .main-form__input.step-3 .bedroom-number {
+  .container .main-form__input.step-3 .bedroom-number {
     flex-direction: column;
   }
-  .main-form__input.step-3 .bedroom-number__block {
+  .container .main-form__input.step-3 .bedroom-number__block {
     width: 100%;
     height: 50px;
+    border-right: 0.1px solid #afc1c9;
   }
-  .main-form__input.step-3 .bedroom-number__block:first-child {
+  .container .main-form__input.step-3 .bedroom-number__block:not(:last-child) {
+    border-bottom: 0px;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: unset;
   }
-  .main-form__input.step-3 .bedroom-number__block:last-child {
+  .container .main-form__input.step-3 .bedroom-number__block:last-child {
     border-top-right-radius: unset;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .main-form__input.step-3 .bedroom-number__block__info {
+  .container .main-form__input.step-3 .bedroom-number__block:hover {
+    border-color: #dc3545;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block__info {
     flex-direction: row;
     height: 50px;
   }
-  .main-form__input.step-3 .bedroom-number__block__info div, .main-form__input.step-3 .bedroom-number__block__info span {
+  .container .main-form__input.step-3 .bedroom-number__block__info div, .container .main-form__input.step-3 .bedroom-number__block__info span {
     font-size: 16px;
   }
 }
@@ -208,6 +259,9 @@
   align-items: center;
   color: #263238;
 }
+.main-form__input.step-4 .comparing__block:not(:last-child) {
+  border-bottom: 0px;
+}
 .main-form__input.step-4 .comparing__block svg {
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
@@ -215,7 +269,7 @@
   margin-right: 8px;
 }
 .main-form__input.step-4 .comparing__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-4 .comparing__block:hover svg {
@@ -224,6 +278,9 @@
 }
 .main-form__input.step-4 .comparing__block:hover svg path {
   fill: #dc3545;
+}
+.main-form__input.step-4 .comparing__block:hover + a {
+  border-top-color: #dc3545;
 }
 
 @media (max-width: 767.98px) {
@@ -270,8 +327,11 @@
 .main-form__input.step-5 .urgency__block p {
   color: #263238;
 }
+.main-form__input.step-5 .urgency__block:not(:last-child) {
+  border-right: 0px;
+}
 .main-form__input.step-5 .urgency__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:hover svg path {
@@ -279,6 +339,9 @@
 }
 .main-form__input.step-5 .urgency__block:hover p {
   color: #dc3545;
+}
+.main-form__input.step-5 .urgency__block:hover + a {
+  border-left-color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:first-child {
   border-top-left-radius: 5px;
@@ -300,33 +363,44 @@
 }
 
 @media (max-width: 767.98px) {
-  .main-form__input.step-5 {
+  .container .main-form__input.step-5 {
     width: 350px;
   }
-  .main-form__input.step-5 .urgency {
+  .container .main-form__input.step-5 .urgency {
     flex-direction: column;
     height: auto;
   }
-  .main-form__input.step-5 .urgency__block {
+  .container .main-form__input.step-5 .urgency__block {
     flex-direction: row;
     justify-content: flex-start;
     padding: 15px;
     position: relative;
+    border-right: 0.1px solid #afc1c9;
   }
-  .main-form__input.step-5 .urgency__block:first-child {
+  .container .main-form__input.step-5 .urgency__block:not(:last-child) {
+    border-bottom: 0px;
+  }
+  .container .main-form__input.step-5 .urgency__block:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: unset;
   }
-  .main-form__input.step-5 .urgency__block:last-child {
+  .container .main-form__input.step-5 .urgency__block:last-child {
     border-top-right-radius: unset;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .main-form__input.step-5 .urgency__block svg {
+  .container .main-form__input.step-5 .urgency__block:hover {
+    border-color: #dc3545;
+  }
+  .container .main-form__input.step-5 .urgency__block:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
+  }
+  .container .main-form__input.step-5 .urgency__block svg {
     height: 40px;
   }
-  .main-form__input.step-5 .urgency__block p {
+  .container .main-form__input.step-5 .urgency__block p {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -438,10 +512,6 @@ a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-}
-
-h1 {
-  font-size: 28px;
 }
 
 p {

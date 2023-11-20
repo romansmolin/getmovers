@@ -17,6 +17,9 @@
   justify-content: center;
   align-items: center;
 }
+.main-form__input.step-3 .bedroom-number__block:not(:last-child) {
+  border-right: 0px;
+}
 .main-form__input.step-3 .bedroom-number__block div {
   color: #263238;
 }
@@ -44,7 +47,7 @@
   font-weight: bold;
 }
 .main-form__input.step-3 .bedroom-number__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
 }
 .main-form__input.step-3 .bedroom-number__block:hover span {
   color: #dc3545;
@@ -52,33 +55,47 @@
 .main-form__input.step-3 .bedroom-number__block:hover div {
   color: #dc3545;
 }
+.main-form__input.step-3 .bedroom-number__block:hover + a {
+  border-left-color: #dc3545;
+}
 
 @media (max-width: 767.98px) {
-  .main-form__input.step-3 {
+  .container .main-form__input.step-3 {
     width: 100%;
   }
-  .main-form__input.step-3 .bedroom-number {
+  .container .main-form__input.step-3 .bedroom-number {
     flex-direction: column;
   }
-  .main-form__input.step-3 .bedroom-number__block {
+  .container .main-form__input.step-3 .bedroom-number__block {
     width: 100%;
     height: 50px;
+    border-right: 0.1px solid #afc1c9;
   }
-  .main-form__input.step-3 .bedroom-number__block:first-child {
+  .container .main-form__input.step-3 .bedroom-number__block:not(:last-child) {
+    border-bottom: 0px;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: unset;
   }
-  .main-form__input.step-3 .bedroom-number__block:last-child {
+  .container .main-form__input.step-3 .bedroom-number__block:last-child {
     border-top-right-radius: unset;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .main-form__input.step-3 .bedroom-number__block__info {
+  .container .main-form__input.step-3 .bedroom-number__block:hover {
+    border-color: #dc3545;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
+  }
+  .container .main-form__input.step-3 .bedroom-number__block__info {
     flex-direction: row;
     height: 50px;
   }
-  .main-form__input.step-3 .bedroom-number__block__info div, .main-form__input.step-3 .bedroom-number__block__info span {
+  .container .main-form__input.step-3 .bedroom-number__block__info div, .container .main-form__input.step-3 .bedroom-number__block__info span {
     font-size: 16px;
   }
 }/*# sourceMappingURL=CurrentHouseSize.css.map */

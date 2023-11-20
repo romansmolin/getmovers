@@ -22,9 +22,12 @@
                     color: $font-color;
                 }
 
+                &:not(:last-child) {
+                    border-right: 0px;
+                  }
                 
                 &:hover {
-                    border: 0.1px solid $primary-color;
+                    border-color: $primary-color;
                     color: $primary-color;
                     
                     svg {
@@ -36,6 +39,10 @@
                     p {
                         color: $primary-color;
                     }
+                }
+
+                &:hover + a {
+                    border-left-color: $primary-color;
                 }
 
                 &:first-child {
@@ -65,7 +72,7 @@
 }
 
 @media (max-width: 767.98px) {
-    .main-form {
+    .container .main-form {
         &__input.step-5 {
             width: 350px;
 
@@ -78,6 +85,12 @@
                     justify-content: flex-start;
                     padding: 15px;
                     position: relative;
+                
+                    border-right: 0.1px solid #afc1c9;
+
+                    &:not(:last-child) {
+                        border-bottom: 0px;
+                      }  
 
                     &:first-child {
                         border-top-left-radius: 5px;
@@ -90,6 +103,15 @@
                         border-bottom-right-radius: 5px;
                         border-bottom-left-radius: 5px;
                     }
+
+                    &:hover {
+                        border-color: $primary-color;
+                      }
+            
+                      &:hover + a {
+                        border-left: 0.1px solid #afc1c9;
+                        border-top-color: $primary-color;
+                      }
 
                     svg {
                         height: 40px;

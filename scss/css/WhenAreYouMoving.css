@@ -18,8 +18,11 @@
 .main-form__input.step-5 .urgency__block p {
   color: #263238;
 }
+.main-form__input.step-5 .urgency__block:not(:last-child) {
+  border-right: 0px;
+}
 .main-form__input.step-5 .urgency__block:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:hover svg path {
@@ -27,6 +30,9 @@
 }
 .main-form__input.step-5 .urgency__block:hover p {
   color: #dc3545;
+}
+.main-form__input.step-5 .urgency__block:hover + a {
+  border-left-color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:first-child {
   border-top-left-radius: 5px;
@@ -48,33 +54,44 @@
 }
 
 @media (max-width: 767.98px) {
-  .main-form__input.step-5 {
+  .container .main-form__input.step-5 {
     width: 350px;
   }
-  .main-form__input.step-5 .urgency {
+  .container .main-form__input.step-5 .urgency {
     flex-direction: column;
     height: auto;
   }
-  .main-form__input.step-5 .urgency__block {
+  .container .main-form__input.step-5 .urgency__block {
     flex-direction: row;
     justify-content: flex-start;
     padding: 15px;
     position: relative;
+    border-right: 0.1px solid #afc1c9;
   }
-  .main-form__input.step-5 .urgency__block:first-child {
+  .container .main-form__input.step-5 .urgency__block:not(:last-child) {
+    border-bottom: 0px;
+  }
+  .container .main-form__input.step-5 .urgency__block:first-child {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: unset;
   }
-  .main-form__input.step-5 .urgency__block:last-child {
+  .container .main-form__input.step-5 .urgency__block:last-child {
     border-top-right-radius: unset;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .main-form__input.step-5 .urgency__block svg {
+  .container .main-form__input.step-5 .urgency__block:hover {
+    border-color: #dc3545;
+  }
+  .container .main-form__input.step-5 .urgency__block:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
+  }
+  .container .main-form__input.step-5 .urgency__block svg {
     height: 40px;
   }
-  .main-form__input.step-5 .urgency__block p {
+  .container .main-form__input.step-5 .urgency__block p {
     position: absolute;
     right: 50%;
     transform: translateX(50%);

@@ -29,7 +29,7 @@
 }
 .main-form .moving-from__house:hover,
 .main-form .moving-from__apartment:hover {
-  border: 0.1px solid #dc3545;
+  border-color: #dc3545;
 }
 .main-form .moving-from__house:hover p,
 .main-form .moving-from__apartment:hover p {
@@ -43,10 +43,35 @@
 .main-form .moving-from__apartment:hover path {
   fill: #dc3545;
 }
+.main-form .moving-from__house:hover + a,
+.main-form .moving-from__apartment:hover + a {
+  border-left: 0.1px solid #dc3545;
+}
+.main-form .moving-from__house {
+  border-right: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.main-form .moving-from__apartment {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 @media (max-width: 767.98px) {
   .main-form__input.step-2 .moving-from {
     flex-direction: column;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house {
+    border-right: 0.1px solid #afc1c9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: unset;
+    border-bottom: 0px;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__apartment {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   .main-form__input.step-2 .moving-from .moving-from__house,
   .main-form__input.step-2 .moving-from .moving-from__apartment {
@@ -65,6 +90,15 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house:hover,
+  .main-form__input.step-2 .moving-from .moving-from__apartment:hover {
+    border-color: #dc3545;
+  }
+  .main-form__input.step-2 .moving-from .moving-from__house:hover + a,
+  .main-form__input.step-2 .moving-from .moving-from__apartment:hover + a {
+    border-left: 0.1px solid #afc1c9;
+    border-top-color: #dc3545;
   }
   .back-btn {
     margin: 0 auto;
