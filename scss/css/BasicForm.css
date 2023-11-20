@@ -35,15 +35,16 @@
 }
 .main-form__input .basic-form a svg {
   position: absolute;
-  right: 15px;
+  right: 18px;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, right 0.3s;
 }
 .main-form__input .basic-form a:hover {
   background-color: #b51827;
 }
 .main-form__input .basic-form a:hover svg {
+  right: 15px;
   opacity: 1;
 }/*# sourceMappingURL=BasicForm.css.map */
