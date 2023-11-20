@@ -2,16 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>WebSite</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <main>
+      <div class="transition transition-1 is-active"></div>
+
       <div class="container">
         <div class="header">
           <div class="header__logo">
-            <img src="../assets/images/logo.svg" alt="Logo" data-href="/index.html" onclick="navigateToURL(this)"/>
+            <img
+              src="../assets/images/logo.svg"
+              alt="Logo"
+              data-href="/index.html"
+              onclick="navigateToURL(this)"
+            />
           </div>
           <div class="header__steps">Step 1 of 4</div>
         </div>
@@ -22,51 +32,35 @@
           </div>
           <div class="main-form__input step-3">
             <div class="bedroom-number">
-              <div
-                class="bedroom-number__block"
-                data-href="/pages/CompareTo.html"
-                onclick="navigateToURL(this)"
-              >
+              <a class="bedroom-number__block" href="./CompareTo.html">
                 <div class="bedroom-number__block__info">
                   <span>1</span>
                   <div>Bedroom</div>
                 </div>
-              </div>
-              <div
-                class="bedroom-number__block"
-                data-href="/pages/CompareTo.html"
-                onclick="navigateToURL(this)"
-              >
+              </a>
+              <a class="bedroom-number__block" href="./CompareTo.html">
                 <div class="bedroom-number__block__info">
                   <span>2</span>
                   <div>Bedroom</div>
                 </div>
-              </div>
-              <div
-                class="bedroom-number__block"
-                data-href="/pages/CompareTo.html"
-                onclick="navigateToURL(this)"
-              >
+              </a>
+              <a class="bedroom-number__block" href="./CompareTo.html">
                 <div class="bedroom-number__block__info">
                   <span>3</span>
                   <div>Bedroom</div>
                 </div>
-              </div>
-              <div
-                class="bedroom-number__block"
-                data-href="/pages/CompareTo.html"
-                onclick="navigateToURL(this)"
-              >
+              </a>
+              <a class="bedroom-number__block" href="./CompareTo.html">
                 <div class="bedroom-number__block__info">
                   <span>4</span>
                   <div>Bedroom</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="back-btn" data-href="/pages/MovingFrom.html" onclick="navigateToURL(this)">
+        <a class="back-btn" href="./MovingFrom.html">
           <svg
             width="15"
             height="9"
@@ -80,7 +74,7 @@
             />
           </svg>
           <p>Back</p>
-        </div>
+        </a>
       </div>
 
       <div class="image-container"></div>

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+
+    <div class="transition transition-1 is-active"></div>
+
     <main>
       <div class="container">
         <div class="header">
@@ -24,7 +27,7 @@
           <div class="main-form__input step-7">
             <div class="basic-form">
                 <input type="text" placeholder="Your Email Address" />
-                <button type="button" data-href="/pages/EnterName.html" onclick="navigateToURL(this)">
+                <a href="./EnterName.html">
                   Continue
                   <svg
                   width="15"
@@ -38,13 +41,13 @@
                     fill="#fff"
                   />
                 </svg>
-                </button>
+                </a>
             </div>
             <p>Preferred email to receive your free cost estimate</p>
           </div>
         </div>
 
-        <div class="back-btn" data-href="/pages/Destination.html" onclick="navigateToURL(this)">
+        <a class="back-btn" href="./Destination.html">
           <svg
             width="15"
             height="9"
@@ -58,7 +61,7 @@
             />
           </svg>
           <p>Back</p>
-        </div>
+        </a>
       </div>
 
       <div class="image-container"></div>

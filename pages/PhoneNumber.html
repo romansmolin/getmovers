@@ -12,6 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
+
+    <div class="transition transition-1 is-active"></div>
+
     <main>
       <div class="container">
         <div class="header">
@@ -29,7 +32,7 @@
           <div class="main-form__input step-9">
             <div class="basic-form">
                 <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" />
-                <button type="button" data-href="/pages/FinalPage.html" onclick="navigateToURL(this)">
+                <a href="./FinalPage.html">
                   Get Estimates
                   <svg
                   width="15"
@@ -43,12 +46,12 @@
                     fill="#fff"
                   />
                 </svg>
-                </button>
+                </a>
             </div>
           </div>
         </div>
 
-        <div class="back-btn" data-href="/pages/EnterName.html" onclick="navigateToURL(this)">
+        <a class="back-btn" href="./EnterName.html">
           <svg
             width="15"
             height="9"
@@ -62,7 +65,7 @@
             />
           </svg>
           <p>Back</p>
-        </div>
+        </a>
       </div>
 
       <div class="image-container"></div>

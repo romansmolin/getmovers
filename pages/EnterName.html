@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+
+    <div class="transition transition-1 is-active"></div>
+
     <main>
       <div class="container">
         <div class="header">
@@ -24,7 +27,7 @@
           <div class="main-form__input step-8">
             <div class="basic-form">
                 <input type="text" placeholder="Full Name" />
-                <button type="button" data-href="/pages/PhoneNumber.html" onclick="navigateToURL(this)">
+                <a href="./PhoneNumber.html">
                   Continue
                   <svg
                   width="15"
@@ -38,12 +41,12 @@
                     fill="#fff"
                   />
                 </svg>
-                </button>
+                </a>
             </div>
           </div>
         </div>
 
-        <div class="back-btn" data-href="/pages/Email.html" onclick="navigateToURL(this)">
+        <a class="back-btn" href="/pages/Email.html">
           <svg
             width="15"
             height="9"
@@ -57,7 +60,7 @@
             />
           </svg>
           <p>Back</p>
-        </div>
+        </a>
       </div>
 
       <div class="image-container"></div>

@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #263238;
 }
 .main-form__input.step-4 .comparing__block svg {
   opacity: 0;

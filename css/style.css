@@ -39,6 +39,7 @@
 }
 .main-form .moving-from__house,
 .main-form .moving-from__apartment {
+  display: block;
   flex: 1;
   border: 0.1px solid #afc1c9;
   display: flex;
@@ -52,6 +53,10 @@
 .main-form .moving-from__apartment svg {
   margin-top: 20px;
   height: 60px;
+}
+.main-form .moving-from__house p,
+.main-form .moving-from__apartment p {
+  color: #263238;
 }
 .main-form .moving-from__house:hover,
 .main-form .moving-from__apartment:hover {
@@ -114,6 +119,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-form__input.step-3 .bedroom-number__block div {
+  color: #263238;
 }
 .main-form__input.step-3 .bedroom-number__block:first-child {
   border-top-left-radius: 5px;
@@ -195,6 +203,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #263238;
 }
 .main-form__input.step-4 .comparing__block svg {
   opacity: 0;
@@ -239,12 +248,18 @@
   border: 0.1px solid #afc1c9;
   cursor: pointer;
 }
+.main-form__input.step-5 .urgency__block p {
+  color: #263238;
+}
 .main-form__input.step-5 .urgency__block:hover {
   border: 2px solid #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:hover svg path {
   fill: #dc3545;
+}
+.main-form__input.step-5 .urgency__block:hover p {
+  color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:first-child {
   border-top-left-radius: 5px;
@@ -321,8 +336,8 @@
   opacity: 0.5;
   font-weight: 600;
 }
-.main-form__input .basic-form button {
-  padding: 0.75em;
+.main-form__input .basic-form a {
+  text-align: center;
   background-color: #dc3545;
   border: none;
   font-size: 16px;
@@ -332,7 +347,7 @@
   position: relative;
   transition: background-color 0.3s;
 }
-.main-form__input .basic-form button svg {
+.main-form__input .basic-form a svg {
   position: absolute;
   right: 15px;
   top: 50%;
@@ -340,10 +355,10 @@
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
 }
-.main-form__input .basic-form button:hover {
+.main-form__input .basic-form a:hover {
   background-color: #b51827;
 }
-.main-form__input .basic-form button:hover svg {
+.main-form__input .basic-form a:hover svg {
   opacity: 1;
 }
 
@@ -356,7 +371,7 @@
 .main-form__input.step-9 .basic-form input {
   width: 100%;
 }
-.main-form__input.step-9 .basic-form button {
+.main-form__input.step-9 .basic-form a {
   margin-top: 16px;
 }
 
@@ -404,6 +419,24 @@ a {
 
 img[alt=Logo] {
   cursor: pointer;
+}
+
+.transition-1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: #dc3545;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease-out;
+}
+
+.transition-1.is-active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 main {

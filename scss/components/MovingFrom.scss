@@ -12,6 +12,7 @@
 
   .moving-from__house,
   .moving-from__apartment {
+    display: block;
     flex: 1;
     border: 0.1px solid #afc1c9;
     display: flex;
@@ -26,11 +27,15 @@
       height: 60px;
     }
 
+    p {
+      color: $font-color;
+    }
+
     &:hover {
-      border: 2px solid #dc3545;
+      border: 2px solid $primary-color;
 
       p {
-        color: #dc3545;
+        color: $primary-color;
       }
 
       img {
@@ -38,7 +43,7 @@
       }
 
       path {
-        fill: #dc3545;
+        fill: $primary-color;
       }
     }
   }
