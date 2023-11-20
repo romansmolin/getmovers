@@ -68,7 +68,7 @@ main .container .header__logo img {
 main .container .header__steps {
   color: #dc3545;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 main .image-container {
   flex: 1;
@@ -115,7 +115,7 @@ main .image-container {
     font-size: 16px;
   }
   main .container .main-form .stats {
-    font-size: 14px;
+    font-size: 16px;
   }
   main .image-container {
     display: none;
