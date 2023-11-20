@@ -597,7 +597,7 @@ main .image-container {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     width: auto;
     padding: 10px 0px 5px 0px;
   }
@@ -652,7 +652,7 @@ main .image-container {
   .back-btn {
     position: absolute;
     right: 50%;
-    bottom: 100px;
+    bottom: 120px;
     transform: translateX(50%);
   }
   .back-btn svg {
