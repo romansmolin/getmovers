@@ -652,7 +652,7 @@ main .image-container {
   .back-btn {
     position: absolute;
     right: 50%;
-    bottom: 170px;
+    bottom: 100px;
     transform: translateX(50%);
   }
   .back-btn svg {
