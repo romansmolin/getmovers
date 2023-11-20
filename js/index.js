@@ -1,8 +1,10 @@
+//DUMMY ROUTING
 function navigateToURL(element) {
   const url = element.getAttribute("data-href");
   window.location.href = url;
 }
 
+//PROGRESS BAR
 document.addEventListener("DOMContentLoaded", function () {
   function updateProgressBar(progress) {
     const progressBarItems = document.querySelectorAll(".progress__bar__item");
@@ -25,55 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
   // Determine progress based on the current page
   let progress;
   switch (currentPageIdentifier) {
-    case "index.html":
-    case "MovingFrom.html":
-    case "CurrentHouseSize.html":
-      progress = 1;
-      break;
-    case "CompareTo.html":
-    case "WhenAreYouMoving.html":
-    case "Destination.html":
-      progress = 2;
-      break;
-    case "Email.html":
-    case "EnterName.html":
-    case "PhoneNumber.html":
-      progress = 3;
-      break;
-    case "FinalPage.html":
-      progress = 4;
-      break;
-    default:
-      progress = 0;
+    case "index.html": progress = 1; break;
+    case "MovingFrom.html": progress = 2; break;
+    case "CurrentHouseSize.html": progress = 3; break;
+    case "CompareTo.html": progress = 4; break;
+    case "WhenAreYouMoving.html": progress = 5; break;
+    case "Destination.html": progress = 6; break;
+    case "Email.html": progress = 7; break;
+    case "EnterName.html": progress = 8; break;
+    case "PhoneNumber.html": progress = 9; break;
+    case "FinalPage.html": progress = 10; break;
+    default: progress = 0;
   }
 
   updateProgressBar(progress);
 });
 
-window.onload = () => {
-  const transitionElements = document.querySelector(".transition");
-  const anchorsElements = document.querySelectorAll("a");
 
-  setTimeout(() => {
-    transitionElements.classList.remove("is-active");
-  }, 500);
-
-  for (let i = 0; i < anchorsElements.length; i++) {
-    const anchor = anchorsElements[i];
-
-    anchor.addEventListener("click", (e) => {
-      if (anchor.id === "phone-number-link") {
-        return
-      }
-
-      e.preventDefault();
-      let target = e.currentTarget.href;
-
-      transitionElements.classList.add("is-active");
-
-      setTimeout(() => {
-        window.location.href = target;
-      }, 500);
-    });
-  }
-};
