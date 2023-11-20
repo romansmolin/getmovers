@@ -23,7 +23,8 @@
 
 .stats {
   color: #263238;
-  font-size: 0.9em;
+  font-weight: 600;
+  opacity: 0.5;
   margin-top: 16px;
   text-align: center;
 }/*# sourceMappingURL=Main.css.map */
