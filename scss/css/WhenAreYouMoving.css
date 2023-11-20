@@ -19,7 +19,7 @@
   color: #263238;
 }
 .main-form__input.step-5 .urgency__block:hover {
-  border: 2px solid #dc3545;
+  border: 1px solid #dc3545;
   color: #dc3545;
 }
 .main-form__input.step-5 .urgency__block:hover svg path {

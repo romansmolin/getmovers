@@ -29,7 +29,7 @@
 }
 .main-form .moving-from__house:hover,
 .main-form .moving-from__apartment:hover {
-  border: 2px solid #dc3545;
+  border: 1px solid #dc3545;
 }
 .main-form .moving-from__house:hover p,
 .main-form .moving-from__apartment:hover p {
