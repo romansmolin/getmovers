@@ -114,6 +114,9 @@ main .image-container {
   main .container .main-form__title p {
     font-size: 14px;
   }
+  main .container .main-form .stats {
+    font-size: 14px;
+  }
   main .image-container {
     display: none;
   }
