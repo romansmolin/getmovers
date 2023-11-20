@@ -11,7 +11,7 @@
   font-size: 16px;
   text-align: center;
   display: block;
-  width: 360px;
+  width: 465px;
   margin: 0 auto;
 }
 .main-form__input.step-10 .basic-form {
@@ -34,6 +34,7 @@
     gap: 65px;
   }
   .container.final .main-form__title p {
+    width: 360px;
     font-size: 14px;
   }
   .container.final .main-form__input.step-10 .basic-form a {
