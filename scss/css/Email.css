@@ -1,5 +1,11 @@
+.main-form__input.step-7 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .main-form__input.step-7 p {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-top: 20px;
   font-weight: 600;

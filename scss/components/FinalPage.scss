@@ -1,5 +1,23 @@
+.container.final {
+  justify-content: flex-start;
+  gap: 100px
+}
+
 .main-form {
   max-width: 440px;
+
+  &__title {
+    
+      p {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: 360px;
+        margin: 0 auto;
+      }
+  
+  }
 
   &__input.step-10 {
     .basic-form {
@@ -28,6 +46,15 @@
       gap: 65px;
 
       .main-form {   
+
+        &__title {
+    
+          p {
+            font-size: 14px;
+          }
+      
+      }
+
         &__input.step-10 {
           .basic-form {  
             a {
