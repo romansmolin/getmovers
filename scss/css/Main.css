@@ -29,4 +29,10 @@
   opacity: 0.5;
   margin-top: 16px;
   text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .main-form__title p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Main.css.map */

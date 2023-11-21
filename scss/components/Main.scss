@@ -36,3 +36,14 @@
   margin-top: 16px;
   text-align: center;
 }
+
+@media (max-width: 767.98px) {
+  .main-form {
+    &__title { 
+      p {
+        font-size: 16px;
+      }
+    }
+  
+  }
+}

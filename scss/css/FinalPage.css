@@ -2,11 +2,10 @@
   justify-content: flex-start;
   gap: 100px;
 }
-
-.main-form {
+.container.final .main-form {
   max-width: 440px;
 }
-.main-form__title p {
+.container.final .main-form__title p {
   display: block;
   font-size: 16px;
   text-align: center;
@@ -14,15 +13,15 @@
   width: 465px;
   margin: 0 auto;
 }
-.main-form__input.step-10 .basic-form {
+.container.final .main-form__input.step-10 .basic-form {
   text-align: center;
 }
-.main-form__input.step-10 .basic-form a {
+.container.final .main-form__input.step-10 .basic-form a {
   font-size: 20px;
   font-weight: 600;
   display: block;
 }
-.main-form__input.step-10 .basic-form p {
+.container.final .main-form__input.step-10 .basic-form p {
   opacity: 0.5;
   font-size: 16px;
   font-weight: 600;
